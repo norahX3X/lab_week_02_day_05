@@ -1,6 +1,6 @@
 console.log("starter.js is connected")
 
-
+$('.pyro').css('display','none');
 $('.zone').on("mouseover", function (event) {
     // highlight the mouseover target
     $(this).addClass("green");
@@ -22,8 +22,11 @@ $('.zone').on("click", function (event) {
 function checkAll(box) {
     var dives = $('.green');
     var boxes = $('.zone');
-    if (dives.length == boxes.length)
+    if (dives.length == boxes.length){
         $('.message').text("congrats");
+        $('.pyro').css('display','inline');
+
+    }
 
 
 }
