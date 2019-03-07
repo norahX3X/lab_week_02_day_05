@@ -25,10 +25,12 @@ function checkAll(box) {
     if (dives.length == boxes.length){
         $('.message').text("congrats");
         $('.pyro').css('display','inline');
-
+        $('.button').css('display','inline');
+        
     }
-
-
 }
+$('.button').on("click", function (event) {
+    location.reload();
+});
 
 
