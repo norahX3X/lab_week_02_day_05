@@ -23,7 +23,7 @@ function checkAll(box) {
     var dives = $('.green');
     var boxes = $('.zone');
     if (dives.length == boxes.length)
-        $('.message').text("congrats");
+        $('.message').text("congrats ;)");
 
 
 }

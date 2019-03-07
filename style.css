@@ -31,3 +31,7 @@ h2 {
   border-radius: 10px;
   margin: auto;
 }
+.message{
+  color:pink;
+  font-size: 100px;
+}
