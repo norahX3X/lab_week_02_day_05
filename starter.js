@@ -3,27 +3,21 @@ console.log("starter.js is connected")
 
 $('.zone').on("mouseover",function( event ) {   
     // highlight the mouseover target
-    //event.target.addClass('.green');
-    event.target.style.backgroundColor = "orange";
+   $(this).addClass( "green" );
+
 });
 
 $('.zone').on("mouseout",function( event ) {   
     // highlight the mouseover target
-    event.target.style.backgroundColor = "white";
+    $(this).removeClass( "green" );
 });
 $('.zone').on("click",function( event ) {   
     // highlight the mouseover target
-    event.target.style.backgroundColor = "orange";
-    //event.target.removeEventListener("mouseout",handleMouseDown);
-    event.target.off("mouseout",handleMouseDown);
+  
+    $(this).off("mouseout");
 
 });
 
 function checkAll (box){
     
 }
-
-// document.getElementsByClassName("zone").addEventListener("mouseover", function( event ) {   
-//     // highlight the mouseover target
-//     event.target.style.color = "orange";
-// });
